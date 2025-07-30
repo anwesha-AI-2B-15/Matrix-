@@ -1,0 +1,11 @@
+#include <stdio.h>
+#define N 2
+#define Q 2
+
+int main() {
+    int arr[N][100] = {0}, lastAnswer = 0, n, x = 1;
+    arr[0][0] = 5; // simulate append
+    arr[1][0] = 7;
+    printf("Query 1 Result: %d", arr[1][0]); // simulate get
+    return 0;
+}
