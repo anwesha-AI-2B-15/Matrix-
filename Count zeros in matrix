@@ -1,0 +1,12 @@
+#include <stdio.h>
+#define R 3
+#define C 4
+
+int main() {
+    int a[R][C] = {{0,0,1,1},{0,1,1,1},{0,0,0,1}}, count = 0;
+    for (int i = 0; i < R; i++)
+        for (int j = 0; j < C; j++)
+            if (a[i][j] == 0) count++;
+    printf("Total zeros: %d", count);
+    return 0;
+}
