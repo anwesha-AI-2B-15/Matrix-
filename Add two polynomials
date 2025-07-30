@@ -1,0 +1,11 @@
+#include <stdio.h>
+#define MAX 5
+
+int main() {
+    int a[MAX] = {5,0,10,6}, b[MAX] = {1,2,4,0}, sum[MAX];
+    for (int i = 0; i < MAX; i++)
+        sum[i] = a[i] + b[i];
+    for (int i = MAX-1; i >= 0; i--)
+        if (sum[i] != 0) printf("%dx^%d ", sum[i], i);
+    return 0;
+}
